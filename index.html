@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(to right, #f83e3e, #0a0a29);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .form {
+        text-align: center;
+      }
+
+      .input {
+        margin: 10px;
+        padding: 10px;
+        width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        transition: border-color 0.3s;
+        font-size: 16px;
+      }
+
+      .input:focus {
+        border-color: #57a4ff;
+      }
+
+      #show {
+        margin-left: 5px;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+      }
+
+      #show-checkbox {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <input
+        type="text"
+        name=""
+        id="input"
+        class="input"
+        placeholder="Enter your password"
+      />
+      <div id="show">
+        <input type="checkbox" id="show-checkbox" />
+        <label for="show-checkbox">Show Password</label>
+      </div>
+    </div>
+  </body>
+</html>
